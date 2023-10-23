@@ -1,0 +1,43 @@
+.purchased-items {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.purchased-items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.purchased-items .item img {
+  width: 200px;
+  height: 200px;
+
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.purchased-items button {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+
+.purchased-items button:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
