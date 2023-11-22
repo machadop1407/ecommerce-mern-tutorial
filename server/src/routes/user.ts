@@ -6,6 +6,9 @@ const router = express.Router();
 import { IUser, UserModel } from "../models/user";
 import { UserErrors } from "../common/errors";
 
+// (for HTTP Request testing only)
+router.use(express.json());
+
 router.post("/register", async (req, res) => {
   const { username, password } = req.body;
   try {
